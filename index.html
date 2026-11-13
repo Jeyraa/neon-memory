@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NEON MEMORY | Future Protocol</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="game.js" defer></script>
+</head>
+
+<body>
+
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <main class="app">
+
+        <header class="topbar">
+            <div class="brand">
+                <div class="brand-icon">N</div>
+                <div>
+                    <h2>NEON<span> MEMORY</span></h2>
+                    <p>FUTURE PROTOCOL / 001</p>
+                </div>
+            </div>
+
+            <div class="system-status">
+                <span class="status-dot"></span>
+                SYSTEM ONLINE
+            </div>
+        </header>
+
+        <section class="hero">
+            <div>
+                <p class="eyebrow">COGNITIVE TRAINING SYSTEM</p>
+                <h1>TEST YOUR <span>MEMORY.</span></h1>
+                <p class="description">
+                    Memorise the symbols. Find every matching pair.
+                </p>
+            </div>
+
+<div class="level-box">
+    <small>SELECT DIFFICULTY</small>
+
+    <div class="difficulty-buttons">
+        <button class="difficulty-btn"
+                data-level="easy">
+            EASY
+        </button>
+
+        <button class="difficulty-btn active"
+                data-level="medium">
+            MEDIUM
+        </button>
+
+        <button class="difficulty-btn"
+                data-level="hard">
+            HARD
+        </button>
+    </div>
+
+    <strong id="level-name">LEVEL 02</strong>
+    <span id="level-description">INTERMEDIATE</span>
+</div>        </section>
+
+        <section class="dashboard">
+
+            <div class="stat">
+                <span>◷</span>
+                <div>
+                    <small>TIME ELAPSED</small>
+                    <strong id="time">00:00</strong>
+                </div>
+            </div>
+
+            <div class="stat">
+                <span>⌖</span>
+                <div>
+                    <small>MOVES</small>
+                    <strong id="moves">00</strong>
+                </div>
+            </div>
+
+            <div class="stat">
+                <span>✦</span>
+                <div>
+                    <small>MATCHED PAIRS</small>
+                    <strong id="score">00 / 09</strong>
+                </div>
+            </div>
+
+            <div class="stat">
+                <span>◈</span>
+                <div>
+                    <small>ACCURACY</small>
+                    <strong id="accuracy">100%</strong>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="game-container">
+
+            <div class="game-top">
+                <div>
+                    <h3>MEMORY GRID <span>///</span></h3>
+                    <p id="game-message">
+                        Initialising memory sequence...
+                    </p>
+                </div>
+
+                <div class="preview-indicator" id="preview-indicator">
+                    <span class="preview-dot"></span>
+                    <span id="preview-text">PREVIEW: 4s</span>
+                </div>
+            </div>
+
+            <div class="game-grid" id="game-grid"></div>
+
+            <div class="game-bottom">
+                <span>NEURAL LINK: ACTIVE</span>
+                <span id="data-cells">18 DATA CELLS DETECTED</span>
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <span>NEON MEMORY SYSTEM © 2026</span>
+
+            <button id="restart-button">
+                ↻ RESTART SYSTEM
+            </button>
+        </footer>
+
+    </main>
+
+    <div class="modal" id="win-modal">
+        <div class="modal-content">
+            <div class="win-icon">✦</div>
+            <p class="eyebrow">MISSION ACCOMPLISHED</p>
+            <h2>YOU <span>WON!</span></h2>
+            <p>All memory pairs successfully recovered.</p>
+
+            <div class="result-grid">
+                <div>
+                    <small>TIME</small>
+                    <strong id="final-time">00:00</strong>
+                </div>
+
+                <div>
+                    <small>MOVES</small>
+                    <strong id="final-moves">00</strong>
+                </div>
+            </div>
+
+            <button id="play-again">PLAY AGAIN ↗</button>
+        </div>
+    </div>
+
+</body>
+</html>
